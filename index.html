@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"> 
+  <script src="main.js" defer></script>
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  
+  <header class="header"><h1>Tic Tac Toe</h1></header>
+  <div class="settings">
+    <div class="select-option-1">
+      <select name="option-player1" id="option-player1">
+        <option value="human">Human</option>
+        <option value="cpu">Cpu</option>
+      </select>
+    </div>
+    <div class="settings-button"><button id="start">Start</button></div>
+    <div class="select-option-2">
+      <select name="option-player2" id="option-player2">
+        <option value="human">Human</option>
+        <option value="cpu">Cpu</option>
+      </select>
+    </div>
+
+    
+  </div>
+  <div class="hud fade">
+    <div class="score">
+      <p>Player 1 : <span class="player1-score">0</span></p>
+      <div class="hud-button"><button id="change-player">Change Players</button></div>
+      <p>Player 2 : <span class="player2-score">0</span></p>
+ </div>
+    <div class="comment fade">let's start!</div>
+  </div>
+  <div class="board">
+  <div class="board-body">
+  <button class="btn disabled" id="1" ></button>
+  <button class="btn disabled" id="2" ></button>
+  <button class="btn disabled" id="3" ></button>
+  <button class="btn disabled" id="4" ></button>
+  <button class="btn disabled" id="5" ></button>
+  <button class="btn disabled" id="6" ></button>
+  <button class="btn disabled" id="7" ></button>
+  <button class="btn disabled" id="8"></button>
+  <button class="btn disabled" id="9"></button>
+</div>
+</div>
+<div class="button-restart">
+<button id="restart">Restart</button>
+</div>
+</body>
+</html>
