@@ -1,19 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root{
+  --background-color:#50a2a2;
+  --header-font-family: 'Oswald',sans-serif;
+  --board-background-color:#df00ff24;
+}
+
 body{
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: var(--background-color);
 }
 header h1{
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 6em;
+  font-family: var(--header-font-family);
 }
-.settings{
-  display: flex;
+.choice{
+  margin: auto;
+  width:50%;
+  text-align: center;
+  font-family: 'Roboto',serif;
+  font-size: 3em;
+
+
+}
+.settings-options{
+  display:flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
   margin: 15px 0;
+  
 }
+
+.select-option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  flex-wrap: nowrap;  
+  white-space: nowrap;
+  font-weight: bold;
+}
+
 .hud{
   display: flex;
   flex-direction: column;
@@ -26,6 +59,9 @@ header h1{
   justify-content: center;
   gap: 2rem;
   margin: 15px 0;
+}
+.score p{
+  font-size:3rem;
 }
 .board{
   display: flex;
@@ -42,12 +78,10 @@ header h1{
   display: none
 }
 .board-body button {
-  background-color: cyan;
-  border: 1px solid black;
+  background-color: var(--board-background-color);
+  border: 3px solid black;
  }
- .disabled{
-   pointer-events: none;
- }
+ 
 .button-restart{
   display: flex;
   justify-content: center;

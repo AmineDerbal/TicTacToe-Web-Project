@@ -1,0 +1,6 @@
+
+set up game settings and fix score and change players  =  remain change players
+
+customize the page  ==    pending
+
+study the cpu AI  == pending
