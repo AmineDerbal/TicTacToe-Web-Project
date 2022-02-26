@@ -55,8 +55,8 @@ start.addEventListener("click",() =>{
   hud.classList.toggle("fade");
   buttonRestartToggle();
  // comment.classList.toggle("fade");
-  crossPlayer = new Player("player1",player1.value,crossImageUrl);
-  circlePlayer = new Player("player2",player2.value,circleImageUrl);
+  crossPlayer = new Player("Cross-Player",player1.value,crossImageUrl);
+  circlePlayer = new Player("Circle-Player",player2.value,circleImageUrl);
 
   newGameSetting();
   showScore(crossPlayer, circlePlayer);
