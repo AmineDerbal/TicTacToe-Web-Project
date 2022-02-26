@@ -6,6 +6,7 @@
   --header-font-family: 'Oswald',sans-serif;
   --board-background-color:#df00ff24;
   --body-font-family: 'Roboto',sans-serif;
+  --choice-font-family: 'Roboto',serif;
   --comment-text-color:#dd0f0f;
 }
 
@@ -48,7 +49,7 @@ header h1{
   margin: auto;
   width:50%;
   text-align: center;
-  font-family: 'Roboto',serif;
+  font-family: var(--choice-font-family);
   font-size: 3em;
 
 
